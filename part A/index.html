@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 10px;
+            /*background-color: #f0f0f0;*/
+        }
+
+        h1, h2 {
+            text-align: right;
+            margin: 0;
+        }
+
+        .logo {
+            width: 100px; 
+        }
+
+        #impressions {
+          display: flex; 
+          gap: 10px; 
+          flex-wrap: nowrap; 
+        }
+
+        #impressions img {
+          width: 150px; 
+          height: 150px;
+          object-fit: cover; 
+          margin: 5px; 
+          border: 3px solid #4CAF50;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <h1>FSWD</h1>
+        <h2>מכון לב</h2>
+      </div>
+      <img class="logo" src="https://visualwebz.com/wp-content/uploads/2016/11/full-stack-developer.jpg" alt="Full Stack Developer Logo">
+    </div>
+    <ul>
+        <li><a href="#disc">תיאור</a></li>
+        <li><a href="#part">משתתפים</a></li>
+        <li><a href="#impressions">רשמים</a></li>
+    </ul>
+    <div id="disc">
+      <h2>תיאור הקורס</h2>
+      <p>פולסארק (Fullstack) הוא קורס מתקדם בתחום הפיתוח, שמטרתו להקנות ידע מעמיק ומעשי בפיתוח מערכות אינטרנט מורכבות, כולל צד לקוח וצד שרת. במהלך הקורס נלמדים כלים וטכנולוגיות פופולריות בפיתוח Fullstack, כמו HTML, CSS, JavaScript לצד הלקוח ו-Python, Node.js, ו-Express לצד השרת. בנוסף, הקורס מתמקד בעבודה עם מסדי נתונים כמו MySQL ו-MongoDB, ובטכניקות פיתוח מתקדמות, הכוללות שימוש בממשקי API, אבטחת מידע ואינטגרציה בין רכיבי המערכת.</p>
+    </div>
+    <div id="part">
+      <table>
+        
+        <tr>
+          <th>שם</th>
+          <th>טלפון</th>
+          <th>אימייל</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>רות כהן</td>
+            <td>050-1234567</td>
+            <td>ruth@example.com</td>
+          </tr>
+          <tr>
+            <td>יוסי לוי</td>
+            <td>052-2345678</td>
+            <td>yossi@example.com</td>
+          </tr>
+          <tr>
+            <td>דנה ישראלי</td>
+            <td>054-3456789</td>
+            <td>dana@example.com</td>
+          </tr>
+          <tr>
+            <td>משה פרידמן</td>
+            <td>053-4567890</td>
+            <td>moshe@example.com</td>
+          </tr>
+          <tr>
+            <td>הילה ברק</td>
+            <td>055-5678901</td>
+            <td>hila@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="impressions">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2DigTi_AXbFxKrRs67LFKKclaxfkIXWPvuw&s">
+      <img src="https://techmonster.co.il/wp-content/uploads/2021/03/%D7%9E%D7%90%D7%9E%D7%A8-%D7%9E%D7%90%D7%99-%D7%90%D7%9C%D7%95%D7%A0%D7%99-%D7%9E%D7%94-%D7%9C%D7%9C%D7%9E%D7%95%D7%93-%D7%9C%D7%A8%D7%90%D7%99%D7%95%D7%9F-%D7%A4%D7%95%D7%9C%D7%A1%D7%98%D7%90%D7%A7.jpg">
+      <img src="https://files.geektime.co.il/wp-content/uploads/2016/10/FullStack.png">
+    </div>
+    <a href="https://www.codecademy.com/courses/learn-html/lessons/html-forms/exercises/forms-intro">codacademy</a>
+    <a href="https://flukeout.github.io/#">fun game</a>
+    <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU&ab_channel=ProgrammingwithMosh">HTML tutorial</a>
+  </body>
+</html>
