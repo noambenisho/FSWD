@@ -9,27 +9,29 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #00aaff, #00ff99);
-            color: #333;
+            background: linear-gradient(to bottom, #000000 25%, #b50e0e);
+            color: #ffffff;
         }
         .container {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: start;
             height: 100vh;
         }
         .register-box {
-            background-color: #ffffff;
+            background-color: none;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: none;
             width: 100%;
             max-width: 500px;
             text-align: center;
+            padding-top: 0;
         }
-        .register-box h2 {
-            color: #ff6600;
-            margin-bottom: 20px;
+        .register-box h1 {
+            color: #ffffff;
+            margin-bottom: 40px;
+            margin-top: 0;
         }
         .register-box input, 
         .register-box select {
@@ -43,11 +45,15 @@
         .register-box select {
             width: 94%;
         }
+        input[type="radio"] {
+            width: auto;
+            margin-right: 30px;
+        }
         .register-box button {
             width: 50%;
             padding: 10px;
-            background-color: #00aaff;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #000000;
             border: none;
             border-radius: 5px;
             font-size: 16px;
@@ -67,18 +73,31 @@
         .register-box a:hover {
             text-decoration: underline;
         }
+        .logo {
+            margin: 20px;
+            margin-bottom: 0;
+            width: 90px;
+            height: 90px;
+            display: inline;
+        }
     </style>
 </head>
 <body>
+    <a href="index.html">
+        <img src="images\logo2.png" class="logo">
+    </a>
     <div class="container">
         <div class="register-box">
-            <h2>Register for Sports Website</h2>
+            <h1>Register for Sports Website</h1>
             <form action="/submit-register" method="POST">
                 <input type="text" name="full_name" placeholder="Full Name" required>
                 <input type="text" name="id_number" placeholder="ID Number" required>
                 <input type="tel" name="phone" placeholder="Phone Number" required>
                 <input type="number" name="age" placeholder="Age" required min="1" max="120">
-                <input type="checkbox">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" required>                        
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
                 <select name="sports" required>
                     <option value="" disabled selected>Favorite Sports</option>
                     <option value="football">Football</option>
