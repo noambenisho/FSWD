@@ -22,18 +22,56 @@
             width: 100px; 
         }
 
+        .container {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+        }
+
+        .sidebar {
+          list-style-type: none;
+          padding: 10px;
+          margin-right: 20px;
+          width: 100px;
+          text-align: right;
+          position: sticky;
+          top: 5px;
+          border: 1px solid #ccc;
+          font-size: large;
+        }
+
+        .sidebar li {
+          margin-bottom: 10px;
+        }
+
+        .main-content {
+          flex: 1;
+          padding-right: 20px; 
+          text-align: right;
+        }
+
         #impressions {
           display: flex; 
           gap: 10px; 
-          flex-wrap: nowrap; 
+          flex-wrap: wrap
         }
 
         #impressions img {
-          width: 150px; 
-          height: 150px;
+          max-width: 100%; 
+          width: 400px; 
+          height: 300px;
           object-fit: cover; 
           margin: 5px; 
           border: 3px solid #4CAF50;
+        }
+
+        #impressions iframe {
+          max-width: 100%; 
+          width: 400px; 
+          height: 300px;
+          object-fit: cover; 
+          margin: 5px; 
+          border: 3px solid #bd0918;
         }
     </style>
   </head>
@@ -45,57 +83,144 @@
       </div>
       <img class="logo" src="https://visualwebz.com/wp-content/uploads/2016/11/full-stack-developer.jpg" alt="Full Stack Developer Logo">
     </div>
-    <ul>
+
+    <div class="container">
+      <ul class="sidebar">
         <li><a href="#disc">תיאור</a></li>
         <li><a href="#part">משתתפים</a></li>
         <li><a href="#impressions">רשמים</a></li>
-    </ul>
-    <div id="disc">
-      <h2>תיאור הקורס</h2>
-      <p>פולסארק (Fullstack) הוא קורס מתקדם בתחום הפיתוח, שמטרתו להקנות ידע מעמיק ומעשי בפיתוח מערכות אינטרנט מורכבות, כולל צד לקוח וצד שרת. במהלך הקורס נלמדים כלים וטכנולוגיות פופולריות בפיתוח Fullstack, כמו HTML, CSS, JavaScript לצד הלקוח ו-Python, Node.js, ו-Express לצד השרת. בנוסף, הקורס מתמקד בעבודה עם מסדי נתונים כמו MySQL ו-MongoDB, ובטכניקות פיתוח מתקדמות, הכוללות שימוש בממשקי API, אבטחת מידע ואינטגרציה בין רכיבי המערכת.</p>
-    </div>
-    <div id="part">
-      <table>
+        <li><a href="#forms">שאלון</a></li>
+      </ul>
+
+      <div class="main-content">
+        <div id="disc">
+          <h2>תיאור הקורס</h2>
+          <p>פולסארק (Fullstack) הוא קורס מתקדם בתחום הפיתוח, שמטרתו להקנות ידע מעמיק ומעשי בפיתוח מערכות אינטרנט מורכבות, כולל צד לקוח וצד שרת. במהלך הקורס נלמדים כלים וטכנולוגיות פופולריות בפיתוח Fullstack, כמו HTML, CSS, JavaScript לצד הלקוח ו-Python, Node.js, ו-Express לצד השרת. בנוסף, הקורס מתמקד בעבודה עם מסדי נתונים כמו MySQL ו-MongoDB, ובטכניקות פיתוח מתקדמות, הכוללות שימוש בממשקי API, אבטחת מידע ואינטגרציה בין רכיבי המערכת.</p>
+          <h3>מה תלמד בקורס?</h3>
+          <p>הקורס יאפשר לך לרכוש מיומנויות מקצועיות בתחום הפיתוח המלא (Fullstack), כולל:</p>
+          <ul>
+            <li><strong>צד הלקוח (Frontend):</strong> פיתוח דפי אינטרנט עם HTML, CSS ו-JavaScript, יצירת חוויית משתמש דינמית ומותאמת.</li>
+            <li><strong>צד השרת (Backend):</strong> פיתוח API עם Python, Node.js ו-Express, עבודה עם בסיסי נתונים ויכולות אינטגרציה מתקדמות.</li>
+            <li><strong>מערכות נתונים:</strong> עבודה עם MySQL ו-MongoDB לניהול נתונים, יצירת שדות חיפוש מתקדמים ושאילתות אופטימליות.</li>
+            <li><strong>אבטחת מידע:</strong> כלים ופרקטיקות לאבטחת המידע במערכות אינטרנט, הצפנה, ניהול הרשאות ואימות משתמשים.</li>
+            <li><strong>עבודה עם API:</strong> יצירת וצריכת APIים עבור תקשורת בין צד הלקוח וצד השרת, ניהול קישורים מרוחקים ואינטגרציה עם שירותים חיצוניים.</li>
+          </ul>
         
-        <tr>
-          <th>שם</th>
-          <th>טלפון</th>
-          <th>אימייל</th>
-        </tr>
-        <tbody>
-          <tr>
-            <td>רות כהן</td>
-            <td>050-1234567</td>
-            <td>ruth@example.com</td>
-          </tr>
-          <tr>
-            <td>יוסי לוי</td>
-            <td>052-2345678</td>
-            <td>yossi@example.com</td>
-          </tr>
-          <tr>
-            <td>דנה ישראלי</td>
-            <td>054-3456789</td>
-            <td>dana@example.com</td>
-          </tr>
-          <tr>
-            <td>משה פרידמן</td>
-            <td>053-4567890</td>
-            <td>moshe@example.com</td>
-          </tr>
-          <tr>
-            <td>הילה ברק</td>
-            <td>055-5678901</td>
-            <td>hila@example.com</td>
-          </tr>
-        </tbody>
-      </table>
+          <h3>למה כדאי להצטרף לקורס?</h3>
+          <ul>
+            <li>רכישת כישורים מעשיים הנדרשים בשוק העבודה.</li>
+            <li>הכנה לעבודה על פרויקטים אמיתיים ויכולת להתמודד עם אתגרים טכנולוגיים.</li>
+            <li>הכשרה מקצועית במגוון כלים וטכנולוגיות שמובילים את תחום הפיתוח כיום.</li>
+            <li>הזדמנויות לתעסוקה בתחום פיתוח Fullstack עם חברות טכנולוגיה מובילות.</li>
+          </ul>
+        
+          <h3>הדרישות לקורס</h3>
+          <p>הקורס מיועד למי שכבר בעל רקע בסיסי בתכנות. לא נדרש ידע קודם בתחום הפיתוח המלא, אך היכרות עם HTML, CSS ו-JavaScript תועיל ותקל על ההבנה וההתקדמות בקורס.</p>
+        
+          <h3>הסילבוס</h3>
+          <ul>
+            <li><strong>היכרות עם טכנולוגיות Fullstack:</strong> עקרונות ותיאוריה מאחורי פיתוח צד הלקוח וצד השרת.</li>
+            <li><strong>HTML, CSS ו-JavaScript:</strong> יצירת אתרים דינמיים ורספונסיביים.</li>
+            <li><strong>Python ו-Node.js:</strong> פיתוח צד השרת ויצירת מערכות RESTful.</li>
+            <li><strong>MySQL ו-MongoDB:</strong> ניהול ותחזוקת מסדי נתונים רלציוניים ו-NoSQL.</li>
+            <li><strong>אבטחת מידע:</strong> הגנה על מערכות אינטרנט ומידע רגיש.</li>
+            <li><strong>עבודה עם APIים:</strong> יצירה ושימוש בשירותים חיצוניים לשדרוג המערכת.</li>
+          </ul>
+        </div>
+        <br>
+
+
+        <div id="part">
+          <h2>משתתפים</h2>
+          <br>
+          <table>  
+            <tr>
+              <th>שם</th>
+              <th>טלפון</th>
+              <th>אימייל</th>
+              <th>ברכה מוקרלטת</th>
+            </tr>
+            <tbody>
+              <tr>
+                <td>רות כהן</td>
+                <td>050-1234567</td>
+                <td>ruth@example.com</td>
+                <td><audio controls><source src="Birthday greetings.ogg"/></audio></td>
+              </tr>
+              <tr>
+                <td>יוסי לוי</td>
+                <td>052-2345678</td>
+                <td>yossi@example.com</td>
+                <td><audio controls><source src="Birthday greetings.ogg"/></audio></td>
+              </tr>
+              <tr>
+                <td>דנה ישראלי</td>
+                <td>054-3456789</td>
+                <td>dana@example.com</td>
+                <td><audio controls><source src="Birthday greetings.ogg"/></audio></td>
+              </tr>
+              <tr>
+                <td>משה פרידמן</td>
+                <td>053-4567890</td>
+                <td>moshe@example.com</td>
+                <td><audio controls><source src="Birthday greetings.ogg"/></audio></td>
+              </tr>
+              <tr>
+                <td>הילה ברק</td>
+                <td>055-5678901</td>
+                <td>hila@example.com</td>
+                <td><audio controls><source src="Birthday greetings.ogg"/></audio></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+
+
+        <h2>רשמים</h2>   
+        <br>
+        <div id="impressions">               
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2DigTi_AXbFxKrRs67LFKKclaxfkIXWPvuw&s">
+          <img src="https://techmonster.co.il/wp-content/uploads/2021/03/%D7%9E%D7%90%D7%9E%D7%A8-%D7%9E%D7%90%D7%99-%D7%90%D7%9C%D7%95%D7%A0%D7%99-%D7%9E%D7%94-%D7%9C%D7%9C%D7%9E%D7%95%D7%93-%D7%9C%D7%A8%D7%90%D7%99%D7%95%D7%9F-%D7%A4%D7%95%D7%9C%D7%A1%D7%98%D7%90%D7%A7.jpg">
+          <img src="https://files.geektime.co.il/wp-content/uploads/2016/10/FullStack.png">
+          <iframe src="https://www.youtube.com/embed/7PORMYx30xE?si=1mGwytjBHDF26nGT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/2aenvVrYWjg?si=usoW6xuThozZa5Ws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/iIgFqkDs4tY?si=MdEFdGKA39uxNf26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+        </div>
+        <br>
+
+        <div id="forms">
+        <form action="check.html" method="GET">
+          <h2>מילוי שאלון</h2>
+          <br>
+          <label for="username">שם:</label>
+          <input type="text" name="username" minlength="2" required>
+          <br>
+          <br>
+          <label for="male">זכר</label>
+          <input name="gender_option" type="radio" value="male" required/>
+          <label for="female">נקבה</label>
+          <input name="gender_option" type="radio" value="female"/>
+          <br>
+          <h3>איזה מהנושאים תרצה ללמוד?</h3>
+          <input type="checkbox" name="HTML">HTML<br>
+          <input type="checkbox" name="CSS">CSS<br>
+          <input type="checkbox" name="JavaScript">JavaScript<br>          
+          <br>
+          <select name="תפקיד" required>
+            <option value="" disabled selected>בחר תפקיד</option>
+            <option value="סטודנט">סטודנט</option>
+            <option value="מרצה">מרצה</option>
+            <option value="מנהל">מנהל</option>
+          </select>
+          <br>
+          <br>
+          <input type="submit">
+        </form>
+        </div>        
+      </div>
     </div>
-    <div id="impressions">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2DigTi_AXbFxKrRs67LFKKclaxfkIXWPvuw&s">
-      <img src="https://techmonster.co.il/wp-content/uploads/2021/03/%D7%9E%D7%90%D7%9E%D7%A8-%D7%9E%D7%90%D7%99-%D7%90%D7%9C%D7%95%D7%A0%D7%99-%D7%9E%D7%94-%D7%9C%D7%9C%D7%9E%D7%95%D7%93-%D7%9C%D7%A8%D7%90%D7%99%D7%95%D7%9F-%D7%A4%D7%95%D7%9C%D7%A1%D7%98%D7%90%D7%A7.jpg">
-      <img src="https://files.geektime.co.il/wp-content/uploads/2016/10/FullStack.png">
-    </div>
+    <br>    
     <a href="https://www.codecademy.com/courses/learn-html/lessons/html-forms/exercises/forms-intro">codacademy</a>
     <a href="https://flukeout.github.io/#">fun game</a>
     <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU&ab_channel=ProgrammingwithMosh">HTML tutorial</a>

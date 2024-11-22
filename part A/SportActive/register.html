@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Website - Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #00aaff, #00ff99);
+            color: #333;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .register-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+        .register-box h2 {
+            color: #ff6600;
+            margin-bottom: 20px;
+        }
+        .register-box input, 
+        .register-box select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .register-box select {
+            width: 94%;
+        }
+        .register-box button {
+            width: 50%;
+            padding: 10px;
+            background-color: #00aaff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .register-box button:hover {
+            background-color: #0077cc;
+        }
+        .register-box a {
+            display: block;
+            margin-top: 15px;
+            color: #00aaff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .register-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="register-box">
+            <h2>Register for Sports Website</h2>
+            <form action="/submit-register" method="POST">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="text" name="id_number" placeholder="ID Number" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="number" name="age" placeholder="Age" required min="1" max="120">
+                <input type="checkbox">
+                <select name="sports" required>
+                    <option value="" disabled selected>Favorite Sports</option>
+                    <option value="football">Football</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="swimming">Swimming</option>
+                    <option value="running">Running</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="tennis">Tennis</option>
+                </select>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <a href="login.html">Already have an account? Login here</a>
+        </div>
+    </div>
+</body>
+</html>
