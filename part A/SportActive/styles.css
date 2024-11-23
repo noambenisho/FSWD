@@ -11,21 +11,10 @@ body {
     text-align: center;
 }
 
-.first {
-    display: inline-flex;
-    margin-bottom: 0;
-}
-
-.logo {
-    width: 90px;
-    height: 90px;
-    display: inline;
-}
-
 .custom-navbar {
     width: 550px;
-    height: 90px;
-    background: #81990a;
+    height: 40px;
+    background: #df550b;
     position: sticky;
     top: 0px;
     z-index: 1;
