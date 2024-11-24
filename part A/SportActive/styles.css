@@ -11,45 +11,12 @@ body {
     text-align: center;
 }
 
-.custom-navbar {
-    width: 550px;
-    height: 40px;
-    background: #df910b;
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-    padding: 0;
-    margin: 0 auto; 
-    text-align: center; 
-    border-radius: 15px;
-  }
-  
-  .nav-container {
-    display: flex;
-    justify-content: center; 
-    padding: 10px 20px;
-  }
-  
-  .nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-    justify-content: center; 
-  }
-  
-  .nav-menu li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: color 0.3s;
-    padding: 5px 10px; 
-  }
-  
- .nav-menu li a:hover {
-    color: #ffffff; 
-  }
+.logo {
+    display: inline;
+    position: absolute; 
+    top: 40px; 
+    left: 0px;
+}
   
 .opening {
     background-image: url('images/background.jpg'); 
@@ -141,30 +108,20 @@ body {
     background-color: #003d80;
 }
 
-.motivation-btn {
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
-    padding: 15px 30px;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 999;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+.motivation {
+    background-image: url("https://tivazo.com/wp-content/uploads/2024/05/How-to-Keep-Yourself-Motivated-10-Best-Tips-and-Tricks.webp");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    margin-top: 20px;
+    height: 400px;
+    align-content: space-around;
 }
 
-.motivation-btn:hover {
-    background-color: #45a049;
+.tour {
+    justify-items: center;
 }
-
-/* שמירת העיצוב למצב של השמעת סאונד אוטומטית */
-audio {
-    display: none; /* מוסתר מהמשתמש */
-}
-
 
 .footer {
     background-color: #333;

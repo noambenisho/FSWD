@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
     <title>Contact Us - SportActive</title>
     <style>
         body {
@@ -25,7 +26,6 @@
         h1 {
             margin: 0;
             text-align: center;
-            transform: translateX(-380%);
         }
 
         main {
@@ -86,22 +86,24 @@
             width: 100%;
             bottom: 0;
         }
-
-        .logo {
-            margin: 10px;
-            width: 90px;
-            height: 90px;
-            display: inline;
-        }
     </style>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img src="images\logo2.png" class="logo">
-        </a>
-        <h1>SportActive</h1>
+    <header class="custom-navbar">
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
     </header>
+    <a href="index.html">
+        <img src="images\logo2.png" class="logo">
+    </a>
+    <h1>SportActive</h1>
     <main>
         <section>
             <h2>Contact Us</h2>
