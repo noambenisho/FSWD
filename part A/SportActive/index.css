@@ -123,13 +123,71 @@ body {
     justify-items: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
+.tour h2 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+h4 {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .opening h1 {
+        font-size: 3rem;
     }
 
-    .news, .sidebar {
-        margin: 0;
+    .opening h2 {
+        font-size: 1.5rem;
+    }
+
+    .news {
+        margin-right: 0;
+    }
+
+    .schedule-table {
+        font-size: 0.8rem;
+    }
+
+    .motivation {
+        background-size: cover;
+        height: 300px;
+    }
+
+    .tour h2 {
+        font-size: 1.5rem;
+    }
+    iframe {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .opening {
+        height: 400px;
+    }
+
+    .opening h1 {
+        font-size: 2rem;
+    }
+
+    .opening h2 {
+        font-size: 1rem;
+    }
+
+    .motivation {
+        background-size: cover;
+        height: 200px;
+        padding: 5px;
+    }
+
+    .tour h2 {
+        font-size: 1.2rem;
+    }
+
+    .tour iframe {
+        width: 100%;
+        height: auto;
     }
 }

@@ -1,44 +1,45 @@
 .custom-navbar {
-    width: 550px;
+    width: 90%; /* שינוי הרוחב לאחוזים */
+    max-width: 550px; /* שמירה על גבול מקסימלי */
     height: 40px;
     background: #df910b;
     position: sticky;
     top: 0px;
     z-index: 1;
     padding: 0;
-    margin: 0 auto; 
-    text-align: center; 
+    margin: 0 auto;
+    text-align: center;
     border-radius: 15px;
-  }
-  
-  .nav-container {
+}
+
+.nav-container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding: 10px 20px;
-  }
-  
-  .nav-menu {
+}
+
+.nav-menu {
     list-style: none;
     display: flex;
     gap: 20px;
     margin: 0;
     padding: 0;
-    justify-content: center; 
-  }
-  
-  .nav-menu li a {
+    justify-content: center;
+}
+
+.nav-menu li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     transition: color 0.3s;
-    padding: 5px 10px; 
-  }
-  
- .nav-menu li a:hover {
-    color: #ffffff; 
-  }
+    padding: 5px 10px;
+}
 
-  .logo {
+.nav-menu li a:hover {
+    color: #ffffff;
+}
+
+.logo {
     margin: 0px 25px;
     width: 80px;
     height: 80px;
@@ -53,4 +54,37 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .custom-navbar {
+        width: 95%; /* סרגל רחב יותר במסכים קטנים */
+        border-radius: 10px;
+    }
+
+    .nav-menu {
+        gap: 15px; /* הקטנת המרווחים */
+    }
+
+    .logo {
+        width: 60px; /* הקטנת לוגו */
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .custom-navbar {
+        width: 100%; /* שימוש מלא ברוחב המסך */
+        border-radius: 5px;
+    }
+
+    .nav-menu {
+        flex-direction: column; /* תצוגה אנכית */
+        gap: 10px;
+    }
+
+    .logo {
+        width: 50px; /* לוגו קטן יותר */
+        height: 50px;
+    }
 }
