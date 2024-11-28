@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #3D3D3D;
 }
 
 .header {
@@ -19,7 +20,6 @@ body {
 }
   
 .opening {
-    background-image: url('images/background.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -29,6 +29,7 @@ body {
     display: flex; 
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
 }
 
 .opening h1 {
@@ -53,15 +54,19 @@ body {
 
 .sidebar {
     flex: 1;
-    background-color: #f4f4f4;
+    background-color: #3D3D3D;
     padding: 10px;
 }
 
+.schedule {
+    background-color: #f5f5f5; 
+}
 
 .schedule-table {
     width: 100%;
-    border-collapse: collapse;
     margin: 20px 0;
+    background-color: #ffffff;
+    border-collapse: collapse;
 }
 
 .schedule-table th, .schedule-table td {
@@ -108,18 +113,10 @@ body {
     background-color: #003d80;
 }
 
-.motivation {
-    background-image: url("https://tivazo.com/wp-content/uploads/2024/05/How-to-Keep-Yourself-Motivated-10-Best-Tips-and-Tricks.webp");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    padding-left: 10px;
-    margin-top: 20px;
-    height: 400px;
-    align-content: space-around;
-}
-
 .tour {
+    background-color: #3D3D3D; 
+    color: white;
+    text-align: center;
     justify-items: center;
 }
 
@@ -129,9 +126,22 @@ body {
     margin-top: 0;
 }
 
-h4 {
+.playlist {
+    background-color: #3D3D3D; 
+    color: white;
     text-align: center;
 }
+
+.motivation {
+    /* background-image: url("https://tivazo.com/wp-content/uploads/2024/05/How-to-Keep-Yourself-Motivated-10-Best-Tips-and-Tricks.webp");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; */
+    background-color: #3D3D3D; 
+    align-content: space-around;
+    justify-items: center;
+}
+
 
 @media screen and (max-width: 768px) {
     .opening h1 {
@@ -190,4 +200,29 @@ h4 {
         width: 100%;
         height: auto;
     }
+}
+
+.section-divider {
+    border-bottom: 2px solid #888; 
+    margin: 30px 0; 
+}
+
+
+.section {
+    margin: 40px 0; 
+    padding: 20px; 
+}
+
+.section h2 {
+    font-size: 2rem;
+    border-bottom: 3px solid orange; 
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.section h4 {
+    color: #ddd;
+    text-align: center;
 }
