@@ -1,15 +1,13 @@
 .custom-navbar {
-    width: 90%; /* שינוי הרוחב לאחוזים */
-    max-width: 550px; /* שמירה על גבול מקסימלי */
+    width: 100%; 
     height: 40px;
     background: #df910b;
     position: sticky;
     top: 0px;
     z-index: 1;
     padding: 0;
-    margin: 0 auto;
+    margin: 0 0;
     text-align: center;
-    border-radius: 15px;
 }
 
 .nav-container {
@@ -21,6 +19,7 @@
 .nav-menu {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin: 0;
     padding: 0;
@@ -59,32 +58,53 @@ footer {
 @media screen and (max-width: 768px) {
     .custom-navbar {
         width: 95%; /* סרגל רחב יותר במסכים קטנים */
-        border-radius: 10px;
+        height: 200%;
     }
 
     .nav-menu {
         gap: 15px; /* הקטנת המרווחים */
+        flex-direction: row; /* תצוגה אופקית */
+    }
+
+    .nav-menu li {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .logo {
         width: 60px; /* הקטנת לוגו */
         height: 60px;
+        top: 48px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .custom-navbar {
         width: 100%; /* שימוש מלא ברוחב המסך */
+        height: 200%;
         border-radius: 5px;
     }
 
     .nav-menu {
-        flex-direction: column; /* תצוגה אנכית */
+        flex-direction: row; /* תצוגה אופקית */
         gap: 10px;
     }
 
     .logo {
         width: 50px; /* לוגו קטן יותר */
         height: 50px;
+        top: 3px;
     }
+}
+
+@media screen and (max-width: 320px) {
+    .nav-menu li a {
+        padding: 5px 5px; /* כפתורים קטנים יותר */
+    }
+
+    .logo {
+        width: 40px; /* לוגו קטן יותר */
+        height: 40px;
+    }
+    
 }

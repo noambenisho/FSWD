@@ -87,6 +87,16 @@ h1 {
 @media screen and (max-width: 480px) {
     .service-name {
         font-size: 1rem;
+    }   
+}
+
+@media screen and (max-width: 360px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* עמודה אחת בלבד */
+        gap: 10px; /* ריווח קטן יותר */
     }
-    
+
+    .grid-item {
+        width: 100%; /* הגדר שהכרטיס יתפוס את כל הרוחב */
+    }
 }

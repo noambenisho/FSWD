@@ -11,13 +11,6 @@ body {
     padding: 10px;
     text-align: center;
 }
-
-.logo {
-    display: inline;
-    position: absolute; 
-    top: 40px; 
-    left: 0px;
-}
   
 .opening {
     background-size: cover; 
@@ -126,6 +119,39 @@ body {
     margin-top: 0;
 }
 
+.video-container {
+    position: relative;
+    width: 100%; /* תופס את כל רוחב המסך */
+    padding-bottom: 56.25%; /* יחס גובה-רוחב של 16:9 */
+    height: 0; /* אין גובה ישיר, רק דרך padding */
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* תתאים לרוחב הקונטיינר */
+    height: 100%; /* תתאים לגובה שנוצר */
+    border: none;
+}
+.playlist-container {
+    position: relative;
+    width: 100%; /* תופס את כל רוחב המסך */
+    padding-bottom: 56.25%; /* יחס גובה-רוחב של 16:9 */
+    height: 0; /* אין גובה ישיר, רק דרך padding */
+    overflow: hidden;
+}
+.playlist-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* תתאים לרוחב הקונטיינר */
+    height: 100%; /* תתאים לגובה שנוצר */
+    border: none;
+    border-radius: 12px; /* לשמור על העיצוב של Spotify */
+}
+
 .playlist {
     background-color: #3D3D3D; 
     color: white;
@@ -133,15 +159,35 @@ body {
 }
 
 .motivation {
-    /* background-image: url("https://tivazo.com/wp-content/uploads/2024/05/How-to-Keep-Yourself-Motivated-10-Best-Tips-and-Tricks.webp");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; */
     background-color: #3D3D3D; 
-    align-content: space-around;
-    justify-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
+.motivation h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.motivation h4 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.audio-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* רוחב מקסימלי */
+    margin: 10px auto;
+}
+
+audio {
+    width: 100%;
+    height: 30px; /* גובה גלוי עבור האודיו */
+    border-radius: 5px; /* עיצוב מעוגל */
+    background-color: #3D3D3D; /* רקע תואם לעיצוב הכללי */
+}
 
 @media screen and (max-width: 768px) {
     .opening h1 {
@@ -168,8 +214,23 @@ body {
     .tour h2 {
         font-size: 1.5rem;
     }
+
     iframe {
         width: 30rem;
+    }
+    .playlist-container {
+        padding-bottom: 75%; /* יחס גובה-רוחב של 4:3 */
+    }
+    .motivation h2 {
+        font-size: 1.8rem;
+    }
+
+    .motivation h4 {
+        font-size: 1rem;
+    }
+
+    .audio-container {
+        max-width: 400px;
     }
 }
 
@@ -186,12 +247,6 @@ body {
         font-size: 1rem;
     }
 
-    .motivation {
-        background-size: cover;
-        height: 200px;
-        padding: 5px;
-    }
-
     .tour h2 {
         font-size: 1.2rem;
     }
@@ -199,6 +254,35 @@ body {
     .tour iframe {
         width: 100%;
         height: auto;
+    }
+
+    .video-container {
+        padding-bottom: 75%; /* יחס גובה-רוחב של 4:3 */
+    }
+    .playlist-container {
+        padding-bottom: 100%; /* יחס גובה-רוחב של 1:1 */
+    }
+
+    .motivation h2 {
+        font-size: 1.5rem;
+    }
+
+    .motivation h4 {
+        font-size: 0.9rem;
+    }
+
+    .audio-container {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .video-container {
+        padding-bottom: 100%; /* יחס גובה-רוחב של 1:1, אם יש צורך */
+    }
+    
+    table.schedule-table {
+        font-size: 0.6em;
     }
 }
 
