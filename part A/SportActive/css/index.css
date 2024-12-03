@@ -119,22 +119,6 @@ body {
     margin-top: 0;
 }
 
-.video-container {
-    position: relative;
-    width: 100%; /* תופס את כל רוחב המסך */
-    padding-bottom: 56.25%; /* יחס גובה-רוחב של 16:9 */
-    height: 0; /* אין גובה ישיר, רק דרך padding */
-    overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* תתאים לרוחב הקונטיינר */
-    height: 100%; /* תתאים לגובה שנוצר */
-    border: none;
-}
 .playlist-container {
     position: relative;
     width: 100%; /* תופס את כל רוחב המסך */
