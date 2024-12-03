@@ -63,7 +63,6 @@ footer {
 
 @media screen and (max-width: 768px) {
     .custom-navbar {
-        width: 95%; /* סרגל רחב יותר במסכים קטנים */
         height: 200%;
     }
 
@@ -86,7 +85,6 @@ footer {
 
 @media screen and (max-width: 480px) {
     .custom-navbar {
-        width: 100%; /* שימוש מלא ברוחב המסך */
         height: 200%;
         border-radius: 5px;
     }

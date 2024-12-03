@@ -167,3 +167,36 @@ video {
         width: 30%;
     }
 }
+
+@media screen and (max-width: 360px){
+    video {
+        height: 200px;
+        width: 300px;
+    }
+
+    .timeline {
+        display: none;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .testimonial-item {
+        width: 80%;
+        align-self: center;
+    }
+
+    .testimonials h2 {
+        font-size: 1.5em; 
+    }
+
+    .testimonial-img {
+        width: 60px;
+        height: 60px; 
+    }
+
+    .testimonial-item blockquote {
+        font-size: 1em; 
+    }
+}

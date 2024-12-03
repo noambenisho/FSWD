@@ -1,3 +1,7 @@
+html{
+
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -92,11 +96,14 @@ h1 {
 
 @media screen and (max-width: 360px) {
     .grid-container {
-        grid-template-columns: 1fr; /* עמודה אחת בלבד */
-        gap: 10px; /* ריווח קטן יותר */
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(6, 1fr);
+        gap: 10px; 
+        height: auto;
     }
 
     .grid-item {
-        width: 100%; /* הגדר שהכרטיס יתפוס את כל הרוחב */
+        width: 90%; 
+        height: 150px;
     }
 }

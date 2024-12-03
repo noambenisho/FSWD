@@ -173,6 +173,31 @@ audio {
     background-color: #3D3D3D; /* רקע תואם לעיצוב הכללי */
 }
 
+.section-divider {
+    border-bottom: 2px solid #888; 
+    margin: 30px 0; 
+}
+
+
+.section {
+    margin: 40px 0; 
+    padding: 20px; 
+}
+
+.section h2 {
+    font-size: 2rem;
+    border-bottom: 3px solid orange; 
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.section h4 {
+    color: #ddd;
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     .opening h1 {
         font-size: 3rem;
@@ -268,29 +293,9 @@ audio {
     table.schedule-table {
         font-size: 0.6em;
     }
+
+    .opening {
+        height: 525px;
+    }
 }
 
-.section-divider {
-    border-bottom: 2px solid #888; 
-    margin: 30px 0; 
-}
-
-
-.section {
-    margin: 40px 0; 
-    padding: 20px; 
-}
-
-.section h2 {
-    font-size: 2rem;
-    border-bottom: 3px solid orange; 
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: white;
-    text-align: center;
-}
-
-.section h4 {
-    color: #ddd;
-    text-align: center;
-}
