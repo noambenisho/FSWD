@@ -121,19 +121,19 @@ body {
 
 .playlist-container {
     position: relative;
-    width: 100%; /* תופס את כל רוחב המסך */
-    padding-bottom: 56.25%; /* יחס גובה-רוחב של 16:9 */
-    height: 0; /* אין גובה ישיר, רק דרך padding */
+    width: 100%; 
+    padding-bottom: 56.25%; 
+    height: 0; 
     overflow: hidden;
 }
 .playlist-container iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* תתאים לרוחב הקונטיינר */
-    height: 100%; /* תתאים לגובה שנוצר */
+    width: 100%; 
+    height: 100%; 
     border: none;
-    border-radius: 12px; /* לשמור על העיצוב של Spotify */
+    border-radius: 12px; 
 }
 
 .playlist {
@@ -162,15 +162,15 @@ body {
 .audio-container {
     position: relative;
     width: 100%;
-    max-width: 500px; /* רוחב מקסימלי */
+    max-width: 500px;
     margin: 10px auto;
 }
 
 audio {
     width: 100%;
-    height: 30px; /* גובה גלוי עבור האודיו */
-    border-radius: 5px; /* עיצוב מעוגל */
-    background-color: #3D3D3D; /* רקע תואם לעיצוב הכללי */
+    height: 30px; 
+    border-radius: 5px; 
+    background-color: #3D3D3D; 
 }
 
 .section-divider {
@@ -228,7 +228,7 @@ audio {
         width: 30rem;
     }
     .playlist-container {
-        padding-bottom: 75%; /* יחס גובה-רוחב של 4:3 */
+        padding-bottom: 75%; 
     }
     .motivation h2 {
         font-size: 1.8rem;
@@ -266,10 +266,10 @@ audio {
     }
 
     .video-container {
-        padding-bottom: 75%; /* יחס גובה-רוחב של 4:3 */
+        padding-bottom: 75%;
     }
     .playlist-container {
-        padding-bottom: 100%; /* יחס גובה-רוחב של 1:1 */
+        padding-bottom: 100%;
     }
 
     .motivation h2 {
@@ -287,7 +287,7 @@ audio {
 
 @media screen and (max-width: 380px) {
     .video-container {
-        padding-bottom: 100%; /* יחס גובה-רוחב של 1:1, אם יש צורך */
+        padding-bottom: 100%; 
     }
     
     table.schedule-table {
