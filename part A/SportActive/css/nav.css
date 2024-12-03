@@ -38,6 +38,12 @@
     color: #ffffff;
 }
 
+.nav-menu a:target {
+    font-weight: bold;
+    color: #2512f3;
+}
+
+
 .logo {
     margin: 0px 25px;
     width: 80px;
